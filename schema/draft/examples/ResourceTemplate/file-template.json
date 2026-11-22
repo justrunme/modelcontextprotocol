@@ -1,0 +1,7 @@
+{
+  "name": "project_file",
+  "title": "Project File",
+  "uriTemplate": "file:///project/{path}",
+  "description": "Access files within the project directory",
+  "mimeType": "text/plain"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "code_review",
+  "title": "Code Review",
+  "description": "Review code changes and provide feedback",
+  "arguments": [
+    {
+      "name": "language",
+      "title": "Programming Language",
+      "description": "The programming language of the code",
+      "required": true
+    },
+    {
+      "name": "context",
+      "title": "Additional Context",
+      "description": "Optional context about the code",
+      "required": false
+    }
+  ]
+}

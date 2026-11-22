@@ -334,6 +334,12 @@ export interface ParseError extends Error {
  *
  * @see {@link https://www.jsonrpc.org/specification#error_object | JSON-RPC 2.0 Error Object}
  *
+ * @example Missing jsonrpc field
+ * {@includeCode ./examples/InvalidRequestError/missing-jsonrpc-field.json}
+ *
+ * @example Invalid method type
+ * {@includeCode ./examples/InvalidRequestError/invalid-method-type.json}
+ *
  * @category Errors
  */
 export interface InvalidRequestError extends Error {
@@ -1477,6 +1483,12 @@ export interface Resource extends BaseMetadata, Icons {
 /**
  * A template description for resources available on the server.
  *
+ * @example File template
+ * {@includeCode ./examples/ResourceTemplate/file-template.json}
+ *
+ * @example API endpoint template with annotations
+ * {@includeCode ./examples/ResourceTemplate/api-endpoint-template.json}
+ *
  * @category `resources/templates/list`
  */
 export interface ResourceTemplate extends BaseMetadata, Icons {
@@ -1654,6 +1666,12 @@ export interface GetPromptResultResponse extends JSONRPCResultResponse {
 
 /**
  * A prompt or prompt template that the server offers.
+ *
+ * @example Simple prompt
+ * {@includeCode ./examples/Prompt/simple-prompt.json}
+ *
+ * @example Code review prompt with arguments
+ * {@includeCode ./examples/Prompt/code-review-prompt.json}
  *
  * @category `prompts/list`
  */
@@ -1910,6 +1928,12 @@ export interface ToolListChangedNotification extends JSONRPCNotification {
  *
  * Clients should never make tool use decisions based on `ToolAnnotations`
  * received from untrusted servers.
+ *
+ * @example Read-only tool
+ * {@includeCode ./examples/ToolAnnotations/read-only-tool.json}
+ *
+ * @example Idempotent update tool
+ * {@includeCode ./examples/ToolAnnotations/idempotent-update-tool.json}
  *
  * @category `tools/list`
  */

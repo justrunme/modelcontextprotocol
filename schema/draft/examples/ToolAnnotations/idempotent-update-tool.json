@@ -1,0 +1,7 @@
+{
+  "title": "Set Configuration",
+  "readOnlyHint": false,
+  "destructiveHint": false,
+  "idempotentHint": true,
+  "openWorldHint": false
+}
